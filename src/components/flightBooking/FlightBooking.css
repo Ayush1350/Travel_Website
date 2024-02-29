@@ -1,56 +1,107 @@
 .flightBookingCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 3rem 0;
 }
 
 .flightBookingH1 {
-    text-align: center;
-    font-size: 3rem;
-  }
-
+  text-align: center;
+  font-size: 3rem;
+  margin: 10rem 0 1.5rem 0;
+}
 
 .flight-booking-form {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80rem;
-    text-align: start;
-    box-shadow: 0 5px 25px 2px rgb(0, 0, 0.11);
-    border-radius: 7px;
-    cursor: pointer;
-    padding: 1rem 0.8rem;
-    margin-bottom: 1.5rem;
-    font-size: 18px;
-    font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80rem;
+  text-align: start;
+  box-shadow: 0 5px 25px 2px rgb(0, 0, 0.11);
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 1rem 0.8rem;
+  margin: 0rem 0 1.5rem 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.flight-booking-form label {
+  margin-bottom: 8px;
+}
+
+.flight-booking-form select,
+.flight-booking-form input,
+.flight-booking-form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.flight-booking-form button {
+  width: 10rem;
+  margin: 1rem auto; /* Set margin-top and margin-bottom to 1rem, and margin-left and margin-right to auto */
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.flight-booking-form button:hover {
+  background-color: #45a049;
+}
+
+.ticket-details {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.ticket-details h2 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.ticket-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ticket-details th, .ticket-details td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.ticket-details th {
+  background-color: #f2f2f2;
+}
+
+.ticket-details .printFlightBookingBtn {
+  width: 10rem;
+  margin: 1rem 0 0 48%;
+}
+
+@media screen and (max-width: 850px) {
+  .flightBookingCard {
+    padding: 1rem;
   }
-  
-  
-  .flight-booking-form label {
-    margin-bottom: 8px;
+
+  .flightBookingH1 {
+    font-size: 2rem;
+    margin: 3rem 0 1rem 0;
   }
-  
-  .flight-booking-form select,
-  .flight-booking-form input,
+
   .flight-booking-form button {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    font-size: 15px;
-    font-weight: 500;
+    margin: 1rem 0;
   }
-  
-  .flight-booking-form button {
-    margin-top: 16px;
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  .ticket-details .printFlightBookingBtn {
+    width: 100%;
+    margin: 1rem 0;
+    
   }
-  
-  .flight-booking-form button:hover {
-    background-color: #45a049;
-  }
-  
+}

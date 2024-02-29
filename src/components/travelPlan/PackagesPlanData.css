@@ -1,0 +1,159 @@
+.packagesPlan {
+    margin: 10rem 5rem 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.packagesPlanData-card {
+    width: 30%;
+    text-align: start;
+    box-shadow: 0 5px 25px 2px rgb(0, 0, 0.11);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 1rem 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.packagesPlanData-image {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.packagesPlanData-image img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 7px;
+}
+
+.packagesPlanData-image:hover img {
+    transform: scale(1.3);
+}
+
+.packagesPlanData-card h2 {
+    font-size: 2rem;
+    padding: 0.9rem 0 0.2rem 0;
+    margin-bottom: 1px;
+    
+}
+
+.packagesPlanData-card h4 {
+    font-size: 1.3rem;
+    border-bottom: 2px black dotted;
+
+    padding-bottom: 0.8rem;
+    font-weight: 530;
+    font-style:initial;
+}
+
+.packagesPlanData-card ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 1rem 0 1rem 1rem;
+    border-bottom: 2px black dotted;
+
+}
+
+.packagesPlanData-card li {
+    width: 50%; /* Each item takes 50% width, creating a two-column layout */
+    margin-bottom: 0.5rem; /* Add some spacing between list items */
+    font-size: 1.4rem;
+}
+
+
+.packagesPlanDataBtn {
+    width: 8rem;
+    margin: 1rem 0 0 15rem;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 1rem;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.packagesPlanDataBtn:hover { 
+        background-color: #45a049;
+      
+}
+
+.bottomDiv {
+    display: flex;
+    align-items: center;
+  }
+  
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.startFrom {
+
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.priceOfPackages {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .destinationcard {
+        flex-direction: column;
+        width: 100%;
+        margin:auto;
+        margin-top: 10rem;
+
+    }
+
+    .packagesPlanData-card {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        
+
+    }
+
+    .packagesPlanDataBtn {
+        margin: 1rem 0 0 5rem;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .packagesPlanData-card li { /* Add some spacing between list items */
+        font-size: 0.7rem;
+    }
+
+    .priceContainer {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .startFrom {
+    
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .priceOfPackages {
+        font-size: 1rem;
+        font-weight: 550;
+    }
+}

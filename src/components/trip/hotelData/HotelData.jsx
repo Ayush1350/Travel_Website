@@ -1,9 +1,13 @@
 import "/src/components/trip/Service.css"
 import PropTypes from "prop-types";
 
+
 function HotelData(props) {
   return (
     <>
+
+
+
     
     <div className="t-card" onClick={props.onClick}>
 
@@ -17,9 +21,10 @@ function HotelData(props) {
     <p>{props.text}</p>
 
 
+
     </div>
-    
-    
+
+
     
     </>
   )

@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
 import FlightBookingData from './FlightBookingData';
+import ServiceNavbar from "../../components/navbar/ServiceNavbar";
+import Footer from "../../components/footer/Footer";
+
+
 
 import './FlightBooking.css';
 
@@ -95,6 +99,9 @@ function FlightBooking() {
 
   return (
     <>
+
+      <ServiceNavbar/>
+
       <h1 className='flightBookingH1'>Flight Booking</h1>
       <div className='flightBookingCard'>
         <FlightBookingData
@@ -105,6 +112,8 @@ function FlightBooking() {
           totalCost={totalCost}
         />
       </div>
+
+      <Footer/>
     </>
   );
 }

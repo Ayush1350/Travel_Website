@@ -1,4 +1,5 @@
-import Navbar from "../navbar/Navbar"
+import ServiceNavbar from "/src/components/navbar/ServiceNavbar.jsx";
+
 import HotelBooking from "./HotelBooking";
 import Hotel1 from "/src/assets/goa/Hotel1.jpg";
 import Hotel2 from "/src/assets/goa/Hotel2.jpg";
@@ -15,114 +16,228 @@ import Hotel12 from "/src/assets/goa/Hotel12.jpg";
 import Hotel13 from "/src/assets/goa/Hotel13.jpg";
 import Hotel14 from "/src/assets/goa/Hotel14.jpg";
 import Hotel15 from "/src/assets/goa/Hotel15.jpg";
-import Footer from "/src/components/footer/Footer.jsx"
-
-
+import Footer from "/src/components/footer/Footer.jsx";
 
 function Goa() {
   return (
     <>
-    
-    <Navbar/>
-    <div className="destinationcard">
-                    <HotelBooking
-                        image={Hotel1}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
+      <ServiceNavbar />
 
-                    <HotelBooking
-                        image={Hotel2}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals","Selected Meals","Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel3}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel4}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel5}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel6}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel7}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel8}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel9}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel10}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel11}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel12}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel13}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel14}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                    <HotelBooking
-                        image={Hotel15}
-                        heading="Luxury Retreat at The Zuri - 4N"
-                        stay="4N Goa"
-                        li={["5 Star Hotel", "Selected Meals"]}
-                    />
-                </div>
+      <div className="hotelBookingCard">
+        <HotelBooking
+          image={Hotel1}
+          heading="Taj Cidade de Goa Horizon Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Free breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
 
-                <Footer/>
-     
-    
+        <HotelBooking
+          image={Hotel2}
+          heading="Radisson Blu Resort Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Paid breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel3}
+          heading="ITC a Luxury Collection Resort"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Free breakfast",
+            "Free parking",
+            "Accessible",
+            "Air-conditioned",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel4}
+          heading="Isprava Estate in Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Guest Relationship Manager",
+            "Concierge Service",
+            "Permanent Cleaning Staff",
+            "Electrician",
+            "Plumber",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel5}
+          heading="Antarim Resort"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Paid breakfast",
+            "Free parking",
+            "Accessible",
+            "Plumber",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel6}
+          heading="Caravela Beach Resort Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Free breakfast",
+            "Free parking",
+            "Accessible",
+            "Electrician",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel7}
+          heading="Holiday Inn Goa Candolim"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Paid breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel8}
+          heading="Kenilworth Resort & Spa, Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Free breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel9}
+          heading="Hyatt Centric Candolim Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Paid breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel10}
+          heading="Grand Hyatt Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Paid breakfast",
+            "Free parking",
+            "Accessible",
+            "Indoor and outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel11}
+          heading="The Zuri White Sands Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Free breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel12}
+          heading="DoubleTree by Hilton Arpora Baga"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Paid Wi-Fi",
+            "Paid breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel13}
+          heading="ITC Hotels Shanti Morada"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Free breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel14}
+          heading="Heritage Village Resort & Spa Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Free Wi-Fi",
+            "Free breakfast",
+            "Free parking",
+            "Accessible",
+            "Outdoor pool",
+            "More...",
+          ]}
+        />
+
+        <HotelBooking
+          image={Hotel15}
+          heading="Isprava Estate in Goa"
+          stay="Rs. 38750 Per Night"
+          li={[
+            "Guest Relationship Manager",
+            "Concierge Service",
+            "Permanent Cleaning Staff",
+            "Electrician",
+            "Plumber",
+            "More...",
+          ]}
+        />
+      </div>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default Goa
+export default Goa;

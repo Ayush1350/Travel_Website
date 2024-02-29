@@ -28,7 +28,7 @@ function Home() {
     title="Your Journey Your Story"
     text="Choose Your Favourite Destination"
     buttonText="Travel Plan"
-    url="/"
+    url="/travelPlan"
     btnClass="show"
     isVideo={true} // Set to true for video, false for image
 

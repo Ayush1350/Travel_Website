@@ -1,16 +1,17 @@
 import Footer from "../../components/footer/Footer";
 import Hero from "../../components/hero/Hero"
-import Navbar from "../../components/navbar/Navbar"
+
 import ServiceImg from "/src/assets/service.jpg";
-import HotelServices from "../../components/trip/hotelData/HotelServices";
-import FlightBooking from "/src/components/flightBooking/FlightBooking.jsx"
+
+
+import ServiceNavbar from "../../components/navbar/ServiceNavbar";
 
 
 
 function Service() {
   return (
     <>
-    <Navbar/>
+    <ServiceNavbar/>
     <Hero
     
     cName="hero-mid"
@@ -22,8 +23,8 @@ function Service() {
 
 
 
-    <HotelServices/>
-    <FlightBooking/>
+   
+    
     
     <Footer/>
     </>

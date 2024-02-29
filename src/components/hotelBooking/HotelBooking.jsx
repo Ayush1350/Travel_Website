@@ -4,14 +4,15 @@ import PropTypes from "prop-types";
 function HotelBooking(props) {
   return (
     <>
-      <div className="destination-card">
-        <div className="destination-image">
-          <img alt="destination-img" src={props.image} />
+      <div className="hotelBooking-card">
+        <div className="hotelBooking-image">
+          <img alt="hotelBooking-img" src={props.image} />
         </div>
 
         <h2>{props.heading}</h2>
         
         <h4>{props.stay}</h4>
+
 
         <ul>
           {Array.isArray(props.li) ? (
@@ -20,6 +21,8 @@ function HotelBooking(props) {
             <li>{props.li}</li>
           )}
         </ul>
+    <button className="hotelBookingBtn">Book Now</button>
+
       </div>
     </>
   );

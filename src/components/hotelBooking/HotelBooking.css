@@ -1,11 +1,11 @@
-.destinationcard {
+.hotelBookingCard {
     margin: 10rem 5rem 0 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.destination-card {
+.hotelBooking-card {
     width: 30%;
     text-align: start;
     box-shadow: 0 5px 25px 2px rgb(0, 0, 0.11);
@@ -15,56 +15,92 @@
     margin-bottom: 1.5rem;
 }
 
-.destination-image {
+.hotelBooking-image {
     height: 200px;
     overflow: hidden;
     border-radius: 7px;
 }
 
-.destination-image img {
+.hotelBooking-image img {
     width: 100%;
     height: 100%;
     transition: 0.3s ease-in-out;
     border-radius: 7px;
 }
 
-.destination-image:hover img {
+.hotelBooking-image:hover img {
     transform: scale(1.3);
 }
 
-.destination-card h2 {
+.hotelBooking-card h2 {
     font-size: 2rem;
     padding: 0.9rem 0 0.2rem 0;
     margin-bottom: 1px;
     
 }
 
-.destination-card h4 {
+.hotelBooking-card h4 {
     font-size: 1.3rem;
-    border-bottom: 1px double;
+    border-bottom: 3px black double;
+
     padding-bottom: 0.8rem;
+    margin-left: 1rem;
+
 }
 
-.destination-card ul{
+.hotelBooking-card ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
-
+    justify-content: space-between;
+    margin-left: 3rem; /* Move the entire list to the left */
 }
 
-.destination-card li {
-    margin: 1rem 5rem 0 3rem;
+.hotelBooking-card li {
+    flex: 0 1 calc(50% - 1rem); /* Two columns with 1rem spacing between them */
+    margin: 1rem 0; /* Adjust margin for better spacing */
     font-size: 1.2rem;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.hotelBookingBtn {
+    margin: 1rem 0 0 10rem;
+    width: 10rem;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
 
 }
+
+.hotelBookingBtn:hover { 
+        background-color: #45a049;
+      
+}
+
 
 @media screen and (max-width: 850px) {
-    .destinationcard {
+    .hotelBookingCard {
         flex-direction: column;
     }
 
-    .destination-card {
+    .hotelBooking-card {
         width: 100%;
         margin-bottom: 1.5rem;
+    }
+
+    .hotelBookingBtn {
+        margin: 1rem 0 0 14.5rem;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
     }
 }

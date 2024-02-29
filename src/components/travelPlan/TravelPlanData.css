@@ -1,26 +1,24 @@
-.trip {
-    margin: 10rem 6rem;
+.travelPlan {
+    margin: 4rem 6rem;
     color: #2a2a2a;
     text-align: center; /* Center align content */
-
 }
 
-.trip h1 {
+.travelPlan h1 {
     font-size: 3rem;
+    margin-top: 10rem;
 }
 
-.trip p {
-    font-size: 1.5rem;
-}
 
-.tripcard {
+
+/* .tripcard {
     margin-top: 3rem;
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.t-card {
+.travelPlan-card {
     width: 32%;
     text-align: start;
     box-shadow: 0 5px 25px 2px rgb(0, 0, 0.11);
@@ -30,51 +28,45 @@
     margin-top: 3rem;
 }
 
-.t-image {
+.travelPlan-image {
     height: 200px;
     overflow: hidden;
     border-radius: 7px;
 }
 
-.t-image img {
+.travelPlan-image img {
     width: 100%;
     height: 100%;
     transition: 0.3s ease-in-out;
     border-radius: 7px;
 }
 
-.t-image:hover img {
+.travelPlan-image:hover img {
     transform: scale(1.3);
 }
 
-.t-card h4 {
-    font-size: 2rem;
-    padding: 0.9rem 0 0.2rem 0;
-    margin-bottom: 10px;
+.travelPlan-card h4 {
+    font-size: 2.3rem;
+    margin: 1rem;
     text-align: center;
-    border-bottom: 1px dashed;
+    border-bottom: 5px black dotted;
   }
   
 
-.t-card p {
-    font-size: 1.2rem;
+.travelPlan-card p {
+    font-size: 1.3rem;
     padding-top: 0.5rem;
 }
 
-.serviceTripCard {
-    margin-top: 3rem;
+.travelPlanDiv {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.TripData {
-    width: 30%;
+    margin: 1rem 0 0 1rem;
 }
 
 
 @media screen and (max-width: 850px) {
-    .trip {
+    .travelPlan {
         margin: 4rem 2rem;
     }
 
@@ -82,7 +74,7 @@
         flex-direction: column;
     }
 
-    .t-card {
+    .travelPlan-card {
         width: 100%;
         margin-bottom: 1.5rem;
     }

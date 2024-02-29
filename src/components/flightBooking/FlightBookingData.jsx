@@ -1,8 +1,10 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './FlightBooking.css';
 
-function FlightBookingData({ fromOptions, toOptions, onBookFlight, calculateTotalCost, totalCost }) {
+function FlightBookingData({ fromOptions, toOptions, calculateTotalCost, totalCost }) {
+  const [showTicketDetails, setShowTicketDetails] = useState(false);
+
   const defaultFromValue = fromOptions.length > 0 ? fromOptions[3].label : '';
   const defaultToValue = toOptions.length > 0 ? toOptions[494].label : '';
 
@@ -14,16 +16,14 @@ function FlightBookingData({ fromOptions, toOptions, onBookFlight, calculateTota
     calculateTotalCost();
   };
 
+  const handleBookFlight = () => {
+    setShowTicketDetails(true);
+  };
+
   return (
     <div className="flight-booking-form">
       <label htmlFor="from">From:</label>
-      <input
-        type="text"
-        id="from"
-        className="from"
-        list="fromOptionsList"
-        defaultValue={defaultFromValue}
-      />
+      <input type="text" id="from" className="from" list="fromOptionsList" defaultValue={defaultFromValue} />
       <datalist id="fromOptionsList">
         {fromOptions.map((option) => (
           <option key={option.value} value={option.label} />
@@ -31,13 +31,7 @@ function FlightBookingData({ fromOptions, toOptions, onBookFlight, calculateTota
       </datalist>
 
       <label htmlFor="to">To:</label>
-      <input
-        type="text"
-        id="to"
-        className="to"
-        list="toOptionsList"
-        defaultValue={defaultToValue}
-      />
+      <input type="text" id="to" className="to" list="toOptionsList" defaultValue={defaultToValue} />
       <datalist id="toOptionsList">
         {toOptions.map((option) => (
           <option key={option.value} value={option.label} />
@@ -68,9 +62,49 @@ function FlightBookingData({ fromOptions, toOptions, onBookFlight, calculateTota
       </select>
 
       <p>Total Cost: ${totalCost}</p>
-      <button className="book-flight" onClick={onBookFlight}>
+      <button className="book-flight" onClick={handleBookFlight}>
         Book Flight
       </button>
+
+      {showTicketDetails && (
+    <div className="ticket-details">
+      <h2>Ticket Details</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>From:</td>
+            <td>{defaultFromValue}</td>
+          </tr>
+          <tr>
+            <td>To:</td>
+            <td>{defaultToValue}</td>
+          </tr>
+          <tr>
+            <td>Departure Date:</td>
+            <td>{document.getElementById('departure-date').value}</td>
+          </tr>
+          <tr>
+            <td>Return Date:</td>
+            <td>{document.getElementById('return-date').value}</td>
+          </tr>
+          <tr>
+            <td>Number of Travellers:</td>
+            <td>{document.getElementById('travellers').value}</td>
+          </tr>
+          <tr>
+            <td>Class:</td>
+            <td>{document.getElementById('class').value}</td>
+          </tr>
+          <tr>
+            <td>Total Cost:</td>
+            <td>${totalCost}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button className='printFlightBookingBtn' onClick={() => window.print()}>Print</button>
+    </div>
+  )}
+  
     </div>
   );
 }
