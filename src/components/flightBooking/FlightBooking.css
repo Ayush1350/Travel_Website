@@ -1,8 +1,13 @@
+body {
+  background-color: #000; /* Set the background color of the body to black */
+  color: #fff; /* Set the default text color to white */
+}
+
 .flightBookingCard {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0 3rem 0;
+  margin: 3rem 0;
 }
 
 .flightBookingH1 {
@@ -20,7 +25,7 @@
   border-radius: 7px;
   cursor: pointer;
   padding: 1rem 0.8rem;
-  margin: 0rem 0 1.5rem 0;
+  margin: 0 0 1.5rem 0;
   font-size: 18px;
   font-weight: 600;
 }
@@ -37,11 +42,12 @@
   margin-bottom: 16px;
   font-size: 15px;
   font-weight: 500;
+  color: #000; /* Set text color for form elements */
 }
 
 .flight-booking-form button {
   width: 10rem;
-  margin: 1rem auto; /* Set margin-top and margin-bottom to 1rem, and margin-left and margin-right to auto */
+  margin: 1rem 0 0 26rem; /* Set margin-top and margin-bottom to 1rem, and margin-left and margin-right to auto */
   background-color: #4caf50;
   color: white;
   padding: 10px 15px;
@@ -49,7 +55,6 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
 
 .flight-booking-form button:hover {
   background-color: #45a049;
@@ -70,10 +75,12 @@
   border-collapse: collapse;
 }
 
-.ticket-details th, .ticket-details td {
+.ticket-details th,
+.ticket-details td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  color: #000; /* Set text color for table cells */
 }
 
 .ticket-details th {
@@ -99,9 +106,9 @@
     width: 100%;
     margin: 1rem 0;
   }
+
   .ticket-details .printFlightBookingBtn {
     width: 100%;
     margin: 1rem 0;
-    
   }
 }

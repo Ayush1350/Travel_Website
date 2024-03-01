@@ -10,6 +10,9 @@ import FlightBooking from '/src/components/flightBooking/FlightBooking.jsx';
 import HotelBooking from "/src/components/trip/hotelData/HotelServices.jsx"
 import TravelPlan from './components/travelPlan/TravelPlan.jsx';
 import GoaTravelPlan from './components/travelPlan/goaTravelPaln/GoaTravelPlan.jsx';
+import ShimlaTravelPlan from './components/travelPlan/shimlaTravelPlan/ShimlaTravelPlan.jsx';
+import KeralaTravelPlan from './components/travelPlan/keralaTravelPlan/KeralaTravelPlan.jsx';
+
 
 
 
@@ -36,6 +39,9 @@ function App() {
       <Route path='/hotelBooking' element={<HotelBooking/>} />
       <Route path='/travelPlan' element={<TravelPlan/>} />
       <Route path='/goaTravelPlan' element={<GoaTravelPlan/>} />
+      <Route path='/shimlaTravelPlan' element={<ShimlaTravelPlan/>} />
+      <Route path='/keralaTravelPlan' element={<KeralaTravelPlan/>} />
+
 
       </Routes>
     </Router>

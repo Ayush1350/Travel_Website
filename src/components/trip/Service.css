@@ -1,16 +1,27 @@
+/* trip.css */
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
 .trip {
     margin: 10rem 6rem;
     color: #2a2a2a;
-    text-align: center; /* Center align content */
-
+    text-align: center;
 }
 
 .trip h1 {
     font-size: 3rem;
+    color: #fff; /* Example text color */
+}
+.trip h2 {
+    color: #fff; /* Example text color */
 }
 
 .trip p {
     font-size: 1.5rem;
+    color: #ccc; /* Example text color */
 }
 
 .tripcard {
@@ -28,6 +39,7 @@
     cursor: pointer;
     padding: 1rem 0.8rem;
     margin-top: 3rem;
+    background-color: #333; /* Example background color */
 }
 
 .t-image {
@@ -52,13 +64,14 @@
     padding: 0.9rem 0 0.2rem 0;
     margin-bottom: 10px;
     text-align: center;
-    border-bottom: 1px dashed;
-  }
-  
+    border-bottom: 1px #fff dashed; /* Example border color */
+    color: #fff; /* Example text color */
+}
 
 .t-card p {
     font-size: 1.2rem;
     padding-top: 0.5rem;
+    color: #ccc; /* Example text color */
 }
 
 .serviceTripCard {
@@ -72,7 +85,6 @@
     width: 30%;
 }
 
-
 @media screen and (max-width: 850px) {
     .trip {
         margin: 4rem 2rem;
@@ -85,11 +97,14 @@
     .t-card {
         width: 100%;
         margin-bottom: 1.5rem;
+        background-color: #333; /* Example background color */
     }
+
     .TripData {
         width: 100%;
         margin-bottom: 1.5rem;
     }
+
     .serviceTripCard {
         flex-direction: column;
     }

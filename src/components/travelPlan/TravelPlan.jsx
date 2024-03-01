@@ -39,7 +39,7 @@ function TravelPlan() {
                         text="Starting From"
                         price="Rs. 12,099"
                         onClick={() => {
-                            navigate("/shimla");
+                            navigate("/shimlaTravelPlan");
                         }}
                     />
 
@@ -49,7 +49,7 @@ function TravelPlan() {
                         text="Starting From"
                         price="Rs. 11,099"
                         onClick={() => {
-                            navigate("/kerala");
+                            navigate("/keralaTravelPlan");
                         }}
                     />
                       <TravelPlanData

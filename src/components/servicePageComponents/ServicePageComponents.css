@@ -1,0 +1,132 @@
+/* destination.css */
+
+.servicePageComponent {
+    margin: 4rem 6rem; /* Adjusted margin for centering */
+    text-align: center; /* Center-align text */
+}
+
+.servicePageComponent h1 {
+    font-size: 3rem;
+
+}
+
+.servicePageComponent p {
+    font-size: 1.3rem;
+    max-width: 50rem;
+    text-align: center;
+    margin: 1rem auto; 
+}
+
+.servicePageComponent-des {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4.5rem 4rem 0 4rem;
+
+}
+
+.servicePageComponent-des-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4.5rem 4rem 0 4rem;
+
+}
+
+.servicePageComponent-text {
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+
+.servicePageComponent-text h2 {
+    padding-bottom: 1rem;
+}
+
+.image {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99;
+    padding-bottom: 1.5rem;
+
+}
+
+.image img {
+    width: 49%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 12px -6px rgba(0, 0, 0, 0.3); /* Adjusted box-shadow */
+}
+
+.image img:nth-child(2) {
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+
+#ServicePageComponentsBtn {
+    margin: 1rem 0 0 20rem;
+    width: 10rem;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#ServicePageComponentsBtn:hover { 
+    background-color: #45a049;
+  
+}
+
+@media screen and (max-width: 850px) {
+
+    .servicePageComponent {
+        margin: auto;
+        text-align: center;
+    }
+
+    .servicePageComponent-des {
+        display: flex;
+        flex-direction: column-reverse;
+       
+        margin-top: 2.5rem;
+        /* padding-left: 5rem; */
+
+    }
+
+    .servicePageComponent-des-reverse {
+        display: flexbox;
+        flex-direction: column-reverse;
+        margin-top: 2.5rem;
+    }
+
+.servicePageComponent-text {
+
+    width: 100%;
+
+}
+
+.image {
+    width: 100%;
+    margin: 1.8rem 0;
+}
+
+.image img {
+    height: 250px;
+    
+}
+
+#ServicePageComponentsBtn {
+    margin: 1rem 0 0 3.5rem;
+    
+}
+    
+}

@@ -1,8 +1,107 @@
+/* Add these styles for background and text color changes */
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.flightBookingCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 3rem 0;
+}
+
+.flightBookingH1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 10rem 0 1.5rem 0;
+}
+
+.flight-booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80rem;
+  text-align: start;
+  box-shadow: 0 5px 25px 2px rgb(0, 0, 0.11);
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 1rem 0.8rem;
+  margin: 0rem 0 1.5rem 0;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #444; /* Example background color */
+}
+
+.flight-booking-form label {
+  margin-bottom: 8px;
+  color: #fff; /* Example text color */
+}
+
+.flight-booking-form select,
+.flight-booking-form input,
+.flight-booking-form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff; /* Example text color */
+}
+
+.flight-booking-form button {
+  width: 10rem;
+  margin: 1rem auto;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.flight-booking-form button:hover {
+  background-color: #45a049;
+}
+
+.ticket-details {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.ticket-details h2 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.ticket-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ticket-details th, .ticket-details td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.ticket-details th {
+  background-color: #f2f2f2;
+}
+
+.ticket-details .printFlightBookingBtn {
+  width: 10rem;
+  margin: 1rem 0 0 48%;
+}
+
+/* Hotel Booking Section */
+
 .hotelBookingCard {
     margin: 10rem 5rem 0 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+     /* Example background color */
 }
 
 .hotelBooking-card {
@@ -13,6 +112,7 @@
     cursor: pointer;
     padding: 1rem 0.8rem;
     margin-bottom: 1.5rem;
+    background-color: #444; /* Example background color */
 }
 
 .hotelBooking-image {
@@ -36,30 +136,30 @@
     font-size: 2rem;
     padding: 0.9rem 0 0.2rem 0;
     margin-bottom: 1px;
-    
+    color: #fff; /* Example text color */
 }
 
 .hotelBooking-card h4 {
     font-size: 1.3rem;
     border-bottom: 3px black double;
-
     padding-bottom: 0.8rem;
     margin-left: 1rem;
-
+    color: #fff; /* Example text color */
 }
 
 .hotelBooking-card ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 3rem; /* Move the entire list to the left */
+    margin-left: 3rem;
 }
 
 .hotelBooking-card li {
-    flex: 0 1 calc(50% - 1rem); /* Two columns with 1rem spacing between them */
-    margin: 1rem 0; /* Adjust margin for better spacing */
+    flex: 0 1 calc(50% - 1rem);
+    margin: 1rem 0;
     font-size: 1.2rem;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
+    color: #fff; /* Example text color */
 }
 
 .hotelBookingBtn {
@@ -73,34 +173,41 @@
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-
 }
 
-.hotelBookingBtn:hover { 
-        background-color: #45a049;
-      
+.hotelBookingBtn:hover {
+    background-color: #45a049;
 }
-
 
 @media screen and (max-width: 850px) {
-    .hotelBookingCard {
-        flex-direction: column;
-    }
+  /* ... existing media queries ... */
+  .flightBookingCard,
+  .hotelBookingCard {
+    flex-direction: column;
+  }
 
-    .hotelBooking-card {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
+  .flightBookingH1 {
+    font-size: 2rem;
+    margin: 3rem 0 1rem 0;
+  }
 
-    .hotelBookingBtn {
-        margin: 1rem 0 0 14.5rem;
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 4px;
-        font-size: 15px;
-        font-weight: 500;
-        cursor: pointer;
-    }
+  .flight-booking-form button,
+  .hotelBookingBtn {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .ticket-details .printFlightBookingBtn {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .hotelBooking-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .hotelBookingBtn {
+    margin: 1rem 0 0 14.5rem;
+  }
 }

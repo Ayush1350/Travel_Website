@@ -1,17 +1,16 @@
 import Footer from "../../components/footer/Footer";
 import Hero from "../../components/hero/Hero"
-
+import Navbar from "../../components/navbar/Navbar"
 import ServiceImg from "/src/assets/service.jpg";
-
-
-import ServiceNavbar from "../../components/navbar/ServiceNavbar";
+import ServicePageComponents from "/src/components/servicePageComponents/ServicePageComponents.jsx";
 
 
 
 function Service() {
   return (
     <>
-    <ServiceNavbar/>
+    
+    <Navbar/>
     <Hero
     
     cName="hero-mid"
@@ -25,7 +24,7 @@ function Service() {
 
    
     
-    
+    <ServicePageComponents/>
     <Footer/>
     </>
   )

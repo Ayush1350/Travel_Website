@@ -23,102 +23,216 @@ function Kerala() {
       <ServiceNavbar />
 
       <div className="hotelBookingCard">
-        <HotelBooking
-          image={Hotel1}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
+      <HotelBooking
+  image={Hotel1}
+  heading="Luxury Stay at Taj Bekal Resort & Spa, Kerala - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+    "More..."
+  ]}
+/>
 
-        <HotelBooking
-          image={Hotel2}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={[
-            "5 Star Hotel",
-            "Selected Meals",
-            "Selected Meals",
-            "Selected Meals",
-          ]}
-        />
-        <HotelBooking
-          image={Hotel3}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel4}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel5}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel6}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel7}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel8}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel9}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel10}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel11}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel12}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel13}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel14}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
-        <HotelBooking
-          image={Hotel15}
-          heading="Luxury Retreat at The Zuri - 4N"
-          stay="Rs. 38750 Per Night"
-          li={["5 Star Hotel", "Selected Meals"]}
-        />
+<HotelBooking
+  image={Hotel2}
+  heading="Convenient Stay at Courtyard by Marriott Kochi Airport - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Air-conditioned",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel3}
+  heading="Relaxing Retreat at The LaLiT Resort & Spa Bekal - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel4}
+  heading="Comfortable Stay at Holiday Inn Cochin, an IHG Hotel - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Paid breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel5}
+  heading="Tranquil Escape at Eden Woods Resorts & Spa - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Indoor and outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel6}
+  heading="Scenic Stay at The Raviz Kadavu - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+   "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel7}
+  heading="Idyllic Retreat at Flora Misty Falls, Athirappilly - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel8}
+  heading="Serene Stay at GReaT trails Wayanad by GRT Hotels - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel9}
+  heading="Cozy Retreat at The Quilon Beach Hotel & Convention Centre - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel10}
+  heading="Tranquil Stay at The Raviz Calicut - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel11}
+  heading="Nature Retreat at Amritara Shalimar Spice Garden Resort & Spa - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel12}
+  heading="Mountain Escape at Mountain Shadows Resort - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Indoor and outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel13}
+  heading="Breathtaking Views at B'Canti Boutique Beach Resort Varkala - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Outdoor pool",
+    "Air-conditioned",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel14}
+  heading="Tranquil Retreat at Morickap Resort - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Paid breakfast",
+    "Free parking",
+    "Accessible",
+    "Indoor and outdoor pool",
+    "More..."
+  ]}
+/>
+
+<HotelBooking
+  image={Hotel15}
+  heading="Luxury Coastal Stay at The Zuri - 4N"
+  stay="Rs. 38750 Per Night"
+  li={[
+    "Free Wi-Fi",
+    "Free breakfast",
+    "Free parking",
+    "Accessible",
+    "Outdoor pool",
+    "More..."
+  ]}
+/>
+
       </div>
 
       <Footer />

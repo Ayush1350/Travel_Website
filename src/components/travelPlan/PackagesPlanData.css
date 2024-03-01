@@ -1,8 +1,16 @@
+/* destination.css */
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
 .packagesPlan {
     margin: 10rem 5rem 0 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .packagesPlanData-card {
@@ -13,6 +21,8 @@
     cursor: pointer;
     padding: 1rem 0.8rem;
     margin-bottom: 1.5rem;
+    background-color: #333; /* Example background color */
+
 }
 
 .packagesPlanData-image {
@@ -36,34 +46,33 @@
     font-size: 2rem;
     padding: 0.9rem 0 0.2rem 0;
     margin-bottom: 1px;
-    
+    color: #fff; /* Example text color */
 }
 
 .packagesPlanData-card h4 {
     font-size: 1.3rem;
-    border-bottom: 2px black dotted;
-
+    border-bottom: 2px #000 dotted; /* Example border color */
     padding-bottom: 0.8rem;
     font-weight: 530;
-    font-style:initial;
+    font-style: initial;
+    color: #fff; /* Example text color */
 }
 
 .packagesPlanData-card ul {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
     margin: 1rem 0 1rem 1rem;
-    border-bottom: 2px black dotted;
-
+    border-bottom: 2px #000 dotted;
 }
 
 .packagesPlanData-card li {
-    width: 50%; /* Each item takes 50% width, creating a two-column layout */
-    margin-bottom: 0.5rem; /* Add some spacing between list items */
+    width: 50%;
+    margin-bottom: 0.5rem;
     font-size: 1.4rem;
+    color: #fff; /* Example text color */
 }
-
 
 .packagesPlanDataBtn {
     width: 8rem;
@@ -79,16 +88,15 @@
     font-size: 1.3rem;
 }
 
-.packagesPlanDataBtn:hover { 
-        background-color: #45a049;
-      
+.packagesPlanDataBtn:hover {
+    background-color: #45a049;
 }
 
 .bottomDiv {
     display: flex;
     align-items: center;
-  }
-  
+}
+
 .priceContainer {
     display: flex;
     flex-direction: column;
@@ -96,32 +104,28 @@
 }
 
 .startFrom {
-
     font-size: 1.2rem;
     font-weight: 500;
+    color: #ccc; /* Example text color */
 }
 
 .priceOfPackages {
     font-size: 1.5rem;
     font-weight: 550;
+    color: #fff; /* Example text color */
 }
 
-
-
 @media screen and (max-width: 850px) {
-    .destinationcard {
+    .packagesPlan {
         flex-direction: column;
         width: 100%;
-        margin:auto;
+        margin: auto;
         margin-top: 10rem;
-
     }
 
     .packagesPlanData-card {
         width: 100%;
         margin-bottom: 1.5rem;
-        
-
     }
 
     .packagesPlanDataBtn {
@@ -136,24 +140,25 @@
         cursor: pointer;
     }
 
-    .packagesPlanData-card li { /* Add some spacing between list items */
+    .packagesPlanData-card li {
         font-size: 0.7rem;
+        color: #fff; /* Example text color */
     }
 
     .priceContainer {
         display: flex;
         flex-direction: column;
-
     }
-    
+
     .startFrom {
-    
         font-size: 1rem;
         font-weight: 500;
+        color: #ccc; /* Example text color */
     }
-    
+
     .priceOfPackages {
         font-size: 1rem;
         font-weight: 550;
+        color: #fff; /* Example text color */
     }
 }
