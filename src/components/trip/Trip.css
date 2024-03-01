@@ -1,7 +1,7 @@
 /* trip.css */
 
 body {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
 }
 
@@ -36,7 +36,7 @@ body {
     cursor: pointer;
     padding: 1rem 0.8rem;
     margin-top: 3rem;
-    background-color: #333; /* Example background color */
+    background-color: #272829; /* Example background color */
 }
 
 .t-image {

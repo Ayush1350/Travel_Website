@@ -1,7 +1,7 @@
 /* destination.css */
 
 body {
-    background-color: #000; /* Set the background color of the body */
+    background-color: #333; /* Set the background color of the body */
     color: #fff; /* Set the default text color to white */
 }
 
@@ -35,7 +35,7 @@ body {
     width: 45%;
     text-align: start;
     font-size: 1.1rem;
-    color: #fff; /* Set text color for .des-text */
+     /* Set text color for .des-text */
 }
 
 .des-text h2 {
@@ -57,7 +57,7 @@ body {
     object-fit: cover;
     border-radius: 6px;
     box-shadow: -1px 1px 12px -6px rgba(0, 0, 0, 0.3); /* Adjusted box-shadow */
-    border: 5px solid #fff; /* Add border and set color for img */
+    border: 5px solid #000; /* Add border and set color for img */
 }
 
 .image img:nth-child(2) {

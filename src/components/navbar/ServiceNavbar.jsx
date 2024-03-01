@@ -1,14 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 import { ServiceItems } from '../menuItems/ServiceItems';
 import { Link } from 'react-router-dom';
 
 function ServiceNavbar() {
   const [menuActive, setMenuActive] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
 
   const handleMenuClick = () => {
     setMenuActive(!menuActive);
   };
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark-mode', darkMode);
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+  
 
   return (
     <>
@@ -30,6 +41,9 @@ function ServiceNavbar() {
               </li>
             ))}
           </ul>
+          <button className="toggle-btn" onClick={toggleDarkMode}>
+            {darkMode ? 'Light Mode' : 'Dark Mode'}
+          </button>
         </nav>
       </div>
     </>

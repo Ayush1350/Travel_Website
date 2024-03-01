@@ -12,7 +12,7 @@ import TravelPlan from './components/travelPlan/TravelPlan.jsx';
 import GoaTravelPlan from './components/travelPlan/goaTravelPaln/GoaTravelPlan.jsx';
 import ShimlaTravelPlan from './components/travelPlan/shimlaTravelPlan/ShimlaTravelPlan.jsx';
 import KeralaTravelPlan from './components/travelPlan/keralaTravelPlan/KeralaTravelPlan.jsx';
-
+import "/src/App.css"
 
 
 

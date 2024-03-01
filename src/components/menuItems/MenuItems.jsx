@@ -24,12 +24,13 @@ export const MenuItems = [
         url : "/contact",
         cName : "nav-links",
         icon : "fa-solid fa-address-book"
-    },{
-        title : "Sing Up",
-        url : "/singUp",
-        cName : "nav-links-mobile",
-
     }
+    // ,{
+    //     title : "Sing Up",
+    //     url : "/singUp",
+    //     cName : "nav-links-mobile",
+
+    // }
 
 ]
 
