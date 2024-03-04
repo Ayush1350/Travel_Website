@@ -12,7 +12,10 @@ import TravelPlan from './components/travelPlan/TravelPlan.jsx';
 import GoaTravelPlan from './components/travelPlan/goaTravelPaln/GoaTravelPlan.jsx';
 import ShimlaTravelPlan from './components/travelPlan/shimlaTravelPlan/ShimlaTravelPlan.jsx';
 import KeralaTravelPlan from './components/travelPlan/keralaTravelPlan/KeralaTravelPlan.jsx';
+import Error from './routes/pageNotFound/Error.jsx';
 import "/src/App.css"
+
+
 
 
 
@@ -41,6 +44,7 @@ function App() {
       <Route path='/goaTravelPlan' element={<GoaTravelPlan/>} />
       <Route path='/shimlaTravelPlan' element={<ShimlaTravelPlan/>} />
       <Route path='/keralaTravelPlan' element={<KeralaTravelPlan/>} />
+      <Route path="*" element={<Error/>} />
 
 
       </Routes>
