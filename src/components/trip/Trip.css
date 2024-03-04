@@ -15,6 +15,11 @@ body {
     font-size: 3rem;
 }
 
+.trip h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
 .trip p {
     font-size: 1.5rem;
 }

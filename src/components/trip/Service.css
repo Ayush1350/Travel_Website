@@ -7,12 +7,16 @@ body {
 
 .trip {
     margin: 10rem 6rem;
-    color: #2a2a2a;
     text-align: center;
 }
 
 .trip h1 {
     font-size: 3rem;
+}
+
+.trip h2 {
+    font-size: 1.5rem;
+    color: white;
 }
 
 .trip p {
