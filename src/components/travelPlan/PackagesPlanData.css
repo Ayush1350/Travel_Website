@@ -43,14 +43,14 @@ body {
 }
 
 .packagesPlanData-card h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.9rem 0 0.2rem 0;
     margin-bottom: 1px;
     color: #fff; /* Example text color */
 }
 
 .packagesPlanData-card h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-bottom: 2px #000 dotted; /* Example border color */
     padding-bottom: 0.8rem;
     font-weight: 530;
@@ -70,22 +70,21 @@ body {
 .packagesPlanData-card li {
     width: 50%;
     margin-bottom: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: #fff; /* Example text color */
 }
 
 .packagesPlanDataBtn {
     width: 8rem;
-    margin: 1rem 0 0 15rem;
+    margin-left: 8rem;
     background-color: #4caf50;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border: none;
     border-radius: 1rem;
-    font-size: 15px;
     font-weight: 500;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .packagesPlanDataBtn:hover {
@@ -100,17 +99,17 @@ body {
 .priceContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .startFrom {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: #ccc; /* Example text color */
 }
 
 .priceOfPackages {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 550;
     color: #fff; /* Example text color */
 }

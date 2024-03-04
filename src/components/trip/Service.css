@@ -13,15 +13,11 @@ body {
 
 .trip h1 {
     font-size: 3rem;
-    color: #fff; /* Example text color */
-}
-.trip h2 {
-    color: #fff; /* Example text color */
 }
 
 .trip p {
     font-size: 1.5rem;
-    color: #ccc; /* Example text color */
+
 }
 
 .tripcard {
