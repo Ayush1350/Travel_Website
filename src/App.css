@@ -12,13 +12,17 @@ body {
     color: #fff !important;
 }
 
+.dark-mode h1 {
+  color: #fff;
+}
+
 
   .dark-mode .navbar-logo {
     color: #333 !important;
   }
 
   .dark-mode img {
-    border: 5px solid #fff; /* Add border and set color for img */
+    border: 5px solid #fff;
 
   }
   
